@@ -1,118 +1,109 @@
-html{
-    font-size:18px;
+html {
+    font-size: 18px;
     line-height: 1.4;
-    font-family:helvetica
+    font-family: helvetica
 }
-.container{
+.container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: auto;
 }
-
-header{
-    background: url(resources/glasses-bg.png)center no-repeat;
+header {
+    background: url(resources/glasses-bg.png) no-repeat;
     background-size: cover;
     height: 30rem;
     padding-top: 1rem;
 }
-nav{
+nav {
     background-color: cadetblue;
     color: white;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 1rem 0px;
-}
-.logo-white{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.logo-white img{
-    height: 1.5rem;
-    margin: 0 1rem 0rem 1rem;
-}
-
-/*.name{
-    flex-direction: column;
-    text-align: left;
-    margin-left: 0.5rem;
     padding: 1rem 0;
-    font-size: 1rem;
-}*/
-.nav{
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 18rem;
-    width:auto;
-
 }
-.nav li{
-   display: inline-flex;
-    flex-grow: 1;
-    padding: 2px 1rem;
-}
-.short-nav li{
-    display: inline-block;
-    flex-grow: 1;
-    padding: 2px 1rem;
-}
-.main-banner{
+.logo-white {
     display: flex;
-    margin-top: 10rem;
-    height:  5rem;
+    align-items: center;
+    padding: 0 auto 0 0;
+}
+.logo-white img {
+    height: 1.5rem;
+    margin: 0 1rem 0rem 2rem;
+}
+.nav {
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
-.banner-box{
-    background-color: white;
-    align-content: center;
-    height: 4rem;
+.nav span {
+    padding: 1rem 2rem;
+    width: auto;
 }
-h1{
-    padding: 0.75rem 5rem;
+.short-nav span {
+    display: inline-block;
+    padding: 2px 1rem;
+}
+.main-banner {
+    display: flex;
+    padding-top: 10rem;
+    padding-right: 2rem;
+    justify-content: flex-end;
+    width: 996px;
+    align-items: center;
+    padding-left: 25%;
+}
+.banner-box {
+    background-color: white;
+    align-items: center;
+    width: auto;
+    height: 5rem;
+    display: flex;
+}
+.banner-box span {
+    padding: 1.5rem 5rem;
     font-weight: bold;
     font-size: 2rem;
-    line-height: 1.2;
-    text-align: center;
+    line-height: 1.4;
 }
-.info-icon{
+.info-icon {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     margin: 3em 0;
-    }
-.icon{
+}
+.icon {
     margin: 0 3em;
     width: auto;
 }
-.paper-icon{
+.paper-icon {
     display: flex;
     justify-content: center;
     height: 5em;
     width: 3.5em;
     margin-left: 1.9rem;
 }
-.paper-icon img{
+.paper-icon img {
     width: 100%;
     height: 100%;
 }
-.ruler-icon{
+.ruler-icon {
     display: flex;
     height: 5em;
     width: 5em;
     justify-content: center;
     align-items: flex-start;
 }
-.ruler-icon img{
+.ruler-icon img {
     width: 100%;
 }
-.truck-icon{
-   display: flex;
+.truck-icon {
+    display: flex;
     padding: 0;
     height: 5rem;
     width: 5rem;
     justify-content: center;
     align-items: flex-start;
 }
-.truck-icon img{
+.truck-icon img {
     width: 100%;
 }
 .icon-name {
@@ -120,68 +111,239 @@ h1{
     margin-top: 1em;
     width: 5em;
     height: 2em;
-
 }
-.info-box{
+.info-box {
     display: inline-flex;
     justify-content: center;
-
 }
-.info{
+.info {
     width: 35%;
     margin: 0 2.5%;
 }
-.title{
+.title {
     display: block;
     background-color: cadetblue;
     text-align: left;
     padding: 0.5rem 1.25rem;
     font-weight: bold;
     color: white;
-    width : 10rem;
+    width: 10rem;
     margin-bottom: 1rem;
 }
-p{
+p {
     margin-bottom: 5rem;
-
 }
-footer{
-    display:flex;
+footer {
+    display: flex;
     background-color: azure;
     padding: 4rem;
     align-items: center;
-
 }
-footer img{
+footer img {
     margin-right: 1rem;
-    height:1.5rem;
+    height: 1.5rem;
 }
+
+/*phone size*/
+
 @media only screen and (max-width:480px) {
-    .short-nav li{
-        display:block;}
-    .nav li{ display:none;}
+    .container {
+        width: auto;
+        margin: auto;
     }
-    @media only screen and (min-width: 481px) {
-    .short-nav li{
-        display:none;}
-}
-@media only screen and (max-width:1024px) {
-    .container{
+    header {
+        height: 17rem;
+        background-image: url(resources/glasses-bg.png) no-repeat;
+        background-position: 20%;
+    }
+    nav .container .logo-white img {
+        margin: 0;
+        height: 0.75rem;
+    }
+    .short-nav span {
+        display: inline-block;
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+    .nav span {
+
+        display: none;
+    }
+    .logo-white span {
+        display: none;
+    }
+    .main-banner {
+        display: block;
+        width: 460px;
+        height: 1rem;
+        padding: 0;
+    }
+    .banner-box {
+        background-color: white;
+        margin-top: 10rem;
+        padding: 1rem 0;
+    }
+    .banner-box span {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+        height: 1rem;
+    }
+    .info-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3.77em 0;
+    }
+    .icon {
+        margin: 0 auto;
+        width: auto;
+    }
+    .paper-icon {
+        display: flex;
+        justify-content: center;
+        height: 5em;
+        width: 3.5em;
+        margin-left: .7rem;
+    }
+    .paper-icon img {
         width: 100%;
-        margin:auto;
+        height: 100%;
+    }
+    .ruler-icon {
+        display: flex;
+        height: 3em;
+        width: 5em;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 1.54rem;
+    }
+    .ruler-icon img {
+        width: 100%;
+    }
+    .truck-icon {
+        display: flex;
+        padding: 0;
+        height: 3rem;
+        width: 5rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 1.54rem;
+    }
+    .truck-icon img {
+        width: 100%;
+    }
+    .icon-name {
+        text-align: center;
+        width: 5rem;
+        font-size: 0.77rem;
+    }
+    .info-box {
+        display: block;
+        justify-content: center;
+    }
+    .info {
+        width: 100%;
+        margin: 0;
+    }
+    .title {
+        display: block;
+        background-color: cadetblue;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: white;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    p {
+        margin-bottom: 4rem;
+        font-size: 0.77rem;
+        padding: 0 .75rem;
+    }
+    footer span {
+        display: none;
+    }
+    footer img {
+        margin: 0 45%;
+    }
+}
+
+/* menu nav*/
+
+@media only screen and (min-width: 480px) {
+    .short-nav span {
+        display: none;
+    }
+}
+
+/*tablet size*/
+
+@media only screen and (max-width:1024px) {
+    .container {
+        width: auto;
+        margin: auto;
     }
     nav {
-        width:100%;
-        padding: 1rem;
+        height: 1.5rem;
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
     }
-    header{ height: 22rem;
-    padding: 0;}
-    .main-banner{
-        margin-top: 5rem;
-        margin-left: -2rem;
+    .logo-white {
+        align-items: center;
+        padding: 0 6rem 0 0;}
+    .logo-white img {
+        margin: 0;
+        height: 1rem;
     }
-    h1{
+    .logo-white span {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    .nav {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        width:auto;
+    }
+    .nav span {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+
+    }
+    header {
+        height: 22rem;
+        padding: 0;
+        margin: 0;
+        white-space: 1024px;
+        background-image: url(resources/glasses-bg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .main-banner {
+        display: flex;
+        height: 19.5rem;
+        padding: 0;
+        width: auto;
+
+    }
+    .banner-box {
+        background-color: white;
+        height: 3rem;
+        margin-top: -5rem;
+        margin-right: 2rem;
+
+
+    }
+    .banner-box span {
         padding: 0.75rem 4rem;
-        font-size:1.33rem;
+        font-weight: bold;
+        font-size: 1.33rem;
+        line-height: 1.2;
+        text-align: center;
     }
 }
