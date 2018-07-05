@@ -8,7 +8,7 @@ html {
     margin: auto;
 }
 header {
-    background: url(resources/glasses-bg.png) no-repeat;
+    background: url(resources/glasses-bg.png) no-repeat center;
     background-size: cover;
     height: 30rem;
     padding-top: 1rem;
@@ -59,7 +59,7 @@ nav {
     height: 5rem;
     display: flex;
 }
-.banner-box span {
+.banner-box h1 {
     padding: 1.5rem 5rem;
     font-weight: bold;
     font-size: 2rem;
@@ -147,48 +147,51 @@ footer img {
 /*phone size*/
 
 @media only screen and (max-width:480px) {
-    .container {
-        width: auto;
-        margin: auto;
-    }
+    .container {}
     header {
         height: 17rem;
-        background-image: url(resources/glasses-bg.png) no-repeat;
         background-position: 20%;
+        background-size: cover;
+        padding: 0;
     }
-    nav .container .logo-white img {
-        margin: 0;
-        height: 0.75rem;
+    nav .logo-white img {
+        margin: 0 .5rem;
+        height: 1rem;
     }
-    .short-nav span {
+    nav .short-nav span {
         display: inline-block;
         font-size: 1rem;
         padding-right: 2rem;
     }
     .nav span {
-
         display: none;
     }
     .logo-white span {
         display: none;
     }
-    .main-banner {
-        display: block;
-        width: 460px;
-        height: 1rem;
+    header .main-banner {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0;
     }
     .banner-box {
         background-color: white;
-        margin-top: 10rem;
+        margin-top: 9rem;
+        height: 1rem;
+        width: 100%;
+        align-items: center;
+        align-content: center;
         padding: 1rem 0;
     }
-    .banner-box span {
+    .banner-box h1 {
         font-weight: bold;
-        font-size: 1rem;
         line-height: 1;
+        font-size: 1rem;
+        width: 100%;
         text-align: center;
-        height: 1rem;
     }
     .info-icon {
         display: flex;
@@ -280,7 +283,7 @@ footer img {
 
 /*tablet size*/
 
-@media only screen and (max-width:1024px) {
+@media only screen and (min-width: 490px) and (max-width:1024px) {
     .container {
         width: auto;
         margin: auto;
@@ -294,25 +297,27 @@ footer img {
     }
     .logo-white {
         align-items: center;
-        padding: 0 6rem 0 0;}
+        padding: 0 6rem 0 0;
+        width: auto;
+    }
     .logo-white img {
         margin: 0;
         height: 1rem;
     }
     .logo-white span {
         font-size: 1rem;
-        padding-left: 1rem;
+        padding: 0 5rem 0 1rem;
+        width: auto;
     }
     .nav {
         display: inline-flex;
         justify-content: flex-end;
         align-items: center;
-        width:auto;
+        width: auto;
     }
     .nav span {
         padding: 0.5rem 1rem;
         font-size: 1rem;
-
     }
     header {
         height: 22rem;
@@ -322,24 +327,20 @@ footer img {
         background-image: url(resources/glasses-bg.png) no-repeat;
         background-size: cover;
         background-position: center;
-
     }
     .main-banner {
         display: flex;
         height: 19.5rem;
         padding: 0;
         width: auto;
-
     }
     .banner-box {
         background-color: white;
         height: 3rem;
         margin-top: -5rem;
         margin-right: 2rem;
-
-
     }
-    .banner-box span {
+    .banner-box h1 {
         padding: 0.75rem 4rem;
         font-weight: bold;
         font-size: 1.33rem;
